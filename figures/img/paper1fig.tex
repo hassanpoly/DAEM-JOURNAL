@@ -1,0 +1,191 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{booktabs}
+\usepackage[capitalise]{cleveref}
+\usepackage{mdwlist}
+\usepackage{multirow}
+\usepackage[comma,numbers,compress,square]{natbib}
+\usepackage{pgfplots}
+\usepackage{placeins}
+\usepackage{xspace}
+
+\usepackage{fixltx2e}
+\usepackage{url}
+\thispagestyle{empty}
+\begin{document}
+
+%\begin{figure}
+%\centering
+%\begin{minipage}{.6\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{direct_mapped.pdf}
+%  \caption{Direct Mapped}
+%  \label{fig:sub1}
+%\end{minipage}%
+%\begin{minipage}{.6\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{two_way.pdf}
+%  \caption{Two-way Associative}
+%  \label{fig:sub2}
+%\end{minipage}
+%
+%%\caption{A figure with two subfigures}
+%\label{fig:test}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\begin{minipage}{.6\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{four_way.pdf}
+%  \caption{Four-way Associative}
+%  \label{fig:test1}
+%\end{minipage}%
+%\begin{minipage}{.6\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{eight_way.pdf}
+%  \caption{Eight-way Associative}
+%  \label{fig:test2}
+%\end{minipage}
+%\end{figure}
+
+
+
+%begin{table*}[t]
+%
+%\caption{Level of pessimism introduced by varying cache parameters}
+%\label{improvement factor}
+%\hspace*{-6em}
+%\begin{tabular}{lcccccccccccccccc}
+%
+%\toprule
+%Benchmark & \multicolumn{12}{c}{Level of Pessimism(\%)}   \\
+%\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){14-15}
+%
+%
+%  
+%  & Associativity      && Associativity && Size &&Size &&Line size && Line size && \\
+%& \multicolumn{1}{l}{SA-2 to SA-8} &&{SA-2 to SA-8} &&SA 2-8 kB &&SA 2-8 kB && SA 16-32 B && SA 16-32 B && \\ 
+%& \multicolumn {1}{l}{MBPTA} &&SPTA &&MBPTA &&SPTA&&MBPTA &&SPTA && \\
+%  \midrule
+%
+%
+%
+%
+% 
+%ud       &   \multicolumn{2}{c}{4.26} & \multicolumn{2}{c}{3.96} & 
+%\multicolumn{2}{c}{2.27} & \multicolumn{2}{c}{2.26} 
+%& \multicolumn{2}{c}{2.43} & \multicolumn{2}{c}{2.37}
+%
+%
+%  \\ 
+%cover    &   \multicolumn{2}{c}{1.24} & \multicolumn{2}{c}{1.23} &
+%\multicolumn{2}{c}{1.13} & \multicolumn{2}{c}{1.41} 
+%& \multicolumn{2}{c}{0.45}
+%& \multicolumn{2}{c}{0.52}
+%\\
+%
+%expint &   \multicolumn{2}{c}{0.95}    & \multicolumn{2}{c}{0.43} &
+%\multicolumn{2}{c}{0.43}&\multicolumn{2}{c}{2.21}
+%& \multicolumn{2}{c}{4.12}
+%& \multicolumn{2}{c}{3.27}
+%\\ 
+%
+%fdct     &   \multicolumn{2}{c}{1.70}& \multicolumn{2}{c}{4.18}
+%& \multicolumn{2}{c}{1.99} & \multicolumn{2}{c}{2.06} 
+%& \multicolumn{2}{c}{1.58}
+%& \multicolumn{2}{c}{1.81}
+%\\ 
+%
+%jfdctint &   \multicolumn{2}{c}{2.74} & \multicolumn{2}{c}{7.76}&
+%\multicolumn{2}{c}{1.57}&\multicolumn{2}{c}{3.13}
+%& \multicolumn{2}{c}{4.49}
+%& \multicolumn{2}{c}{3.23}
+%\\ 
+%
+%qsort-exam & \multicolumn{2}{c}{2.21} & \multicolumn{2}{c}{3.82} &
+%\multicolumn{2}{c}{2.70}&\multicolumn{2}{c}{3.53}
+%& \multicolumn{2}{c}{0.15}
+%& \multicolumn{2}{c}{0.70}
+% \\ 
+%
+%select     & \multicolumn{2}{c}{4.80} & \multicolumn{2}{c}{7.93} &
+%\multicolumn{2}{c}{5.01}&\multicolumn{2}{c}{3.21} 
+%& \multicolumn{2}{c}{0.88}
+%& \multicolumn{2}{c}{0.62}
+%
+%\\
+%
+%
+%
+%
+%
+% 
+%cnt        & \multicolumn{2}{c}{1.33} & \multicolumn{2}{c}{10.46} &
+%\multicolumn{2}{c}{0.35} & \multicolumn{2}{c}{1.25} 
+%& \multicolumn{2}{c}{1.11}
+%& \multicolumn{2}{c}{0.82}
+%\\
+%\bottomrule
+%\end{tabular}
+%\end{table*}
+
+%\
+
+
+
+
+ 
+ \begin{figure}
+ \centering
+ \begin{minipage}{.6\textwidth}
+   \centering
+   \hspace{-3cm}
+   \includegraphics[width=1\linewidth]{direct_mapped.pdf}
+  \hspace{-2cm} \caption*{(a) Direct Mapped}
+   \label{fig:sub1}
+ \end{minipage}%
+ \begin{minipage}{.6\textwidth}
+   \centering
+   \includegraphics[width=1\linewidth]{two_way.pdf}
+   \caption*{(b) Two-way Associative}
+   \label{fig:sub2}
+ \end{minipage}
+ 
+ %\caption{A figure with two subfigures}
+ \label{fig:test}
+ \end{figure}
+ 
+ \begin{figure}
+ \vspace{-3cm}
+ \centering
+ 
+ \begin{minipage}{.6\textwidth}
+ \hspace{-3cm}
+   \centering
+   \includegraphics[width=1\linewidth]{four_way.pdf}
+  \hspace{-2cm} \caption*{(c) Four-way Associative}
+   \label{fig:test1}
+ \end{minipage}%
+ \begin{minipage}{.6\textwidth}
+   \centering
+   \includegraphics[width=1\linewidth]{eight_way.pdf}
+   \caption*{(d) Eight-way Associative}
+   \label{fig:test2}
+ \end{minipage}
+ \end{figure}
+
+
+
+
+
+\end{document}
+
